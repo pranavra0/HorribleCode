@@ -1,0 +1,11 @@
+# Good Version: Follows best practices
+## Principles followed:
+1. KISS: The code is straightforward and easy to understand.
+2. DRY: Common logic is encapsulated in functions, avoiding redundancy. Notice how each calculator function (add, sub, div, etc...) is given its own function as to prevent repitition. 
+3. Single Responsibility: Each function has a distinct, single responsibility.
+
+# Bad Version 
+## Principles Violated 
+1. KISS: Overcomplicated structure, unnecessary complexity. Difficult to read at first glance when compared to the good verion
+2. DRY: Repeats calculation logic unnecessarily.
+3. Single Responsibility: The main function does too much; It handles input, logic, and output all at once.
