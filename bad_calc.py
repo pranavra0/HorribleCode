@@ -1,23 +1,22 @@
 
+
 def calculator():
-        a = float(input("First number:"))
-        b = float(input("Second number:"))
+        a = input("First number:")
+        b = input("Second number:")
         op = input("Enter operation (+, -, *, /): ")
         
-        
         if op == '+':
-            print("Result:", a + b)
+            print("Result:", float(a) + float(b))
         elif op == '-':
-            print("Result:", a - b)
+            print("Result:", float(a) - float(b))
         elif op == '*':
-            print("Result:", a * b)
+            print("Result:", float(a) * float(b))
         elif op == '/':
-            if b == 0:
+            if (float(b) == 0):
                 print("Error: Division by zero")
             else:
-                print("Result:", a / b)
+                print("Result:", float(a) / float(b))
         else:
             print("Not sure what happened man")
-
 calculator()
 
