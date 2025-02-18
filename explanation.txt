@@ -1,11 +1,23 @@
 # Good Version: Follows best practices
 ## Principles followed:
 1. KISS: The code is straightforward and easy to understand.
+Example:
+Each function is named simple and matches what the function does
 2. DRY: Common logic is encapsulated in functions, avoiding redundancy. Notice how each calculator function (add, sub, div, etc...) is given its own function as to prevent repitition. 
+Example:
+There is an individual function for add sub divide and multiply
 3. Single Responsibility: Each function has a distinct, single responsibility.
+Example:
+Each function only does what it's said to do (add adds the two numbers and nothing else)
 
 # Bad Version 
 ## Principles Violated 
 1. KISS: Overcomplicated structure, unnecessary complexity. Difficult to read at first glance when compared to the good verion
+Example:
+The function variables are named horribly and the user has no idea what the inputs are for on first glance
 2. DRY: Repeats calculation logic unnecessarily.
+Example:
+Float is done multiple times when it can just be done in the beginning
 3. Single Responsibility: The main function does too much; It handles input, logic, and output all at once.
+Example:
+The calculator function holds all the operations
