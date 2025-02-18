@@ -1,9 +1,9 @@
 
 def calculator():
-    try:
-        a = float(input("Enter first number: "))
+        a = float(input("First number:"))
+        b = float(input("Second number:"))
         op = input("Enter operation (+, -, *, /): ")
-        b = float(input("Enter second number: "))
+        
         
         if op == '+':
             print("Result:", a + b)
@@ -17,9 +17,7 @@ def calculator():
             else:
                 print("Result:", a / b)
         else:
-            print("Error: Invalid operation")
-    except ValueError:
-        print("Error: Invalid input")
+            print("Not sure what happened man")
 
 calculator()
 
